@@ -35,7 +35,7 @@ def cos(text):
 	
 if __name__ == '__main__':
 	start1 = time()
-	with open('number.txt', 'rb') as pickle_file:
+	with open('./data/text_vectors.txt', 'rb') as pickle_file:
 		a = pickle.load(pickle_file)
 		print('They are : ' + str(cos(a)) + ' apart.')
 	print('Time taken: {}'.format(time() - start1))

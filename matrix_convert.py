@@ -18,17 +18,11 @@ def matrix_convert(text, dictionary):
 
 if __name__ == '__main__':
 	start1 = time()
-	with open('matrix.txt', 'wb') as aa:
-		with open('my_edit.txt', 'r') as bb:
-			with open('number.txt', 'rb') as pickle_file:
+	with open('./data/matrix(byte).txt', 'wb') as aa:
+		with open('./data/pruned_texts.txt', 'r') as bb:
+			with open('./data/text_vectors.txt', 'rb') as pickle_file:
 				a = pickle.load(pickle_file)
 				b = bb.readlines()
 				pickle.dump(matrix_convert(a, b), aa)
 	
-	with open('matrix2.txt', 'w') as aa:
-		with open('my_edit.txt', 'r') as bb:
-			with open('number.txt', 'rb') as pickle_file:
-				a = pickle.load(pickle_file)
-				b = bb.readlines()
-				pprint(matrix_convert(a,b), stream = aa)
 	print('Time taken: {}'.format(time() - start1))

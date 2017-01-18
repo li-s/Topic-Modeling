@@ -39,9 +39,9 @@ def remove(a_text, number):
 	texts = [[token for token in text if frequency[token]>1]for text in texts]
 
 	dictionary = corpora.Dictionary(texts)
-	dictionary.save('datasets/a.dict')
+	dictionary.save('datasets/the_dictionary.dict')
 	corpus = [dictionary.doc2bow(text) for text in texts] 
-	corpora.MmCorpus.serialize('datasets/a.mm', corpus)
+	corpora.MmCorpus.serialize('datasets/the_corpus.mm', corpus)
 
 	if number == 1:
 		return dictionary.token2id
@@ -53,11 +53,11 @@ def remove(a_text, number):
 if __name__ == '__main__':
 	
 	start1 = time()
-	with open('my_edit.txt', 'w') as a:
-		with open('my.txt', 'r') as b:
+	with open('./data/pruned_texts.txt', 'w') as a:
+		with open('./data/extracted_texts.txt', 'r') as b:
 			pprint(remove(b, 1), stream = a)
 
-	with open('number.txt', 'wb') as a:
-		with open('my.txt', 'r') as b:
+	with open('./data/text_vectors.txt', 'wb') as a:
+		with open('./data/extracted_texts.txt', 'r') as b:
 			pickle.dump(remove(b, 2), a)
 	print('The program took: {}'.format(time() - start1))

@@ -18,7 +18,7 @@ def matrix_compare(matrix):
 	
 if __name__ == '__main__':
 	start1 = time()
-	with open('matrix.txt', 'rb') as aa:
+	with open('./data/matrix(byte).txt', 'rb') as aa:
 		a = pickle.load(aa)
 		print('They are: ' + str(matrix_compare(a)) + ' apart')
 	print('Time taken: {}'.format(time() - start1))
