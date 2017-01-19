@@ -35,22 +35,3 @@ if __name__ == '__main__':
 			doc.text = t
 	tree = etree.ElementTree(root)
 	tree.write('./data/list_of_texts.xml')
-	
-	
-	
-	
-	
-#	root = etree.Element('texts')
-#	tree = etree.ElementTree(root)
-#	tree.write('./data/list_of_texts.xml')
-#	
-#	tree = xml.parse('./data/list_of_texts.xml')
-#	xmlRoot = tree.getroot()
-#	
-#	for i, t in enumerate(make_xml(c)):
-
-#		if i % int(b) == 0:
-#			print(i/int(b))
-#			doc = etree.SubElement(root, 'text')
-#			doc.text = t
-#	tree.write('./data/list_of_texts.xml')
