@@ -3,7 +3,7 @@
 compare document sililarity
 
 ### TODOs
-1. Construct a dataset consisting of 10000 documents
+1. Construct a dataset consisting of 10000 documents [DONE]
 2. Run LDA over the dataset, to get 10~20 topics (see [gensim](https://radimrehurek.com/gensim/wiki.html#latent-dirichlet-allocation))
 3. Visualize top words in each topic
 
