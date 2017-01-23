@@ -56,6 +56,10 @@ if __name__ == '__main__':
 	with open('./data/pruned_texts.txt', 'w') as a:
 		with open('./data/extracted_texts.txt', 'r') as b:
 			pprint(remove(b, 1), stream = a)
+			
+	with open('./data/pruned_texts(byte).txt', 'wb') as a:
+		with open('./data/extracted_texts.txt', 'r') as b:
+			pickle.dump(remove(b, 1), a)
 
 	with open('./data/text_vectors.txt', 'wb') as a:
 		with open('./data/extracted_texts.txt', 'r') as b:
