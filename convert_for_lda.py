@@ -11,4 +11,4 @@ with open('./data/g_format_doc.txt', 'w') as w:
 				for i in range(len(texts)):
 					for n in range(len(texts[i])):
 						if texts[i][n][0] == dictionary[pairs]:	
-							w.write(str(dictionary[pairs]) + '\t' + pairs + '\t'+ str(texts[i][n][1])+'\n')
+							w.write(str(dictionary[pairs]) + ' ' + pairs + ' '+ str(texts[i][n][1])+'\n'+'abcdefghijklmnopqrstuvwxyzzz'+'\n')
