@@ -1,5 +1,6 @@
 from pprint import pprint
 import pickle
+from time import time
 #4134 unique tokens
 
 def adder(a_text):
@@ -15,7 +16,7 @@ def adder(a_text):
 
 	document = []
 	i = 0
-	while i < len(texts)-2:
+	while i < len(texts):
 		try:
 			number = 0
 			number = int(texts[i][2])
@@ -41,12 +42,17 @@ def adder(a_text):
 	return texts
 	
 if __name__ == '__main__':
+	start1 = time()
 	with open('./data/intermediate_lda.txt', 'wb') as w:
-		with open('./data/g_format_doc.txt', 'r') as read:
+		with open('./data/intermediate_doc.txt', 'r') as read:
 			pickle.dump(adder(read), w)
 	
 	with open('./data/use_this_lda.txt', 'w') as w:
 		with open('./data/intermediate_lda.txt', 'rb') as a:
 			read = pickle.load(a)
-			for i in range(0, len(read)-1):
+			for i in range(0, len(read)):
 				w.write(str(read[i][0]) + '	' + str(read[i][1]) + '	' + str(read[i][2]) + '\n')
+	print('The program took: {}'.format(time()-start1))
+	
+	
+

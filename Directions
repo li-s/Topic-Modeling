@@ -4,6 +4,7 @@ prune.py -> remove common and unique words
 
 LDA:
 convert_for_lda.py -> represents tokens in the necessary format
+quick_sort -> align ID(most right collum) in increasing order
 furthur convert_for_lda.py -> represents tokens in the necessary format
 lda.py -> does the lda
 
