@@ -4,7 +4,7 @@ from time import time
 start1 = time()
 with open('./data/g_format_doc.txt', 'w') as w:
 	with open('./data/pruned_texts(byte).txt', 'rb') as a:
-		with open('./data/text_vectors.txt', 'rb') as b:
+		with open('./data/text_vectors(byte).txt', 'rb') as b:
 			
 			dictionary = pickle.load(a)
 			texts = pickle.load(b)

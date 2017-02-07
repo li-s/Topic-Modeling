@@ -20,7 +20,7 @@ if __name__ == '__main__':
 	start1 = time()
 	with open('./data/matrix(byte).txt', 'wb') as aa:
 		with open('./data/pruned_texts.txt', 'r') as bb:
-			with open('./data/text_vectors.txt', 'rb') as pickle_file:
+			with open('./data/text_vectors(byte).txt', 'rb') as pickle_file:
 				a = pickle.load(pickle_file)
 				b = bb.readlines()
 				pickle.dump(matrix_convert(a, b), aa)
