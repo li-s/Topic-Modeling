@@ -1,30 +1,14 @@
-# Doc_similarity
+# Topic Modeling by Latent Dirichlet Allocation
 
-compare document sililarity
+In this repository, I experimented with the english Wikipedia, namely doing a matrix comparison between two different texts through the cosine similarity method, and, performing a Latent Dirichlet Allocation(LDA) on 10,000 evenly spaced texts within the 
 
-##Introduction
-In this repository, I aimed to experiment with topic modeling, using the english Wikipedia. 
+## Implementation Details
 
-I determined Latent Dirichlet Allocation(LDA) is a good way to achieve my goal. LDA arbitrarily sets
-
-
-
-
-
-
-In this repository, I experimented with the english Wikipedia, namely doing a matrix comparison between two different texts, and, performing a Latent Dirichlet Allocation(LDA).
-
-I wrote two programs two compare the texts using cosine similarity, one using sparce vectors, and the other using the direct output from the corpus. On the 
- 
- 
-on 10,000 evenly spaced texts within the texts
-
-## Methods
 1. xml1.py -> convert xml.bz2 file(wiki) to text file, and extract all text bodies
 2. prune.py -> remove common and unique words
 
 
-###LDA:
+#### LDA:
 3. lda.py -> does the lda
 
 (or additionally,)  
@@ -33,8 +17,8 @@ on 10,000 evenly spaced texts within the texts
 5. furthur convert_for_lda.py -> represents tokens in the necessary format  
 6. lda.py -> does the lda
 
-###Experiments:
-####Matrix comparisons:
+#### Matrix comparisons:
+
 -Sparce vectors:  
 3. sparce_vectors.py
 
@@ -43,12 +27,14 @@ on 10,000 evenly spaced texts within the texts
 4. matrix_compare.py
 
 
-####Make a bz2 file with only text bodies:
+
+#### Make a bz2 file with only text bodies:
+
 3. make_xml.py -> make xml file with text bodies
 4. compress.py -> compresses the file
 
 
-##Results
+## Results
 
 ### Top 20 topics of 10,000 texts in the english Wikipedia:
 ```
@@ -200,7 +186,7 @@ Topic 10:
   '0.024*"holi"')]  
 
 
-### Furthur readings
+## Miscellaneous
 1. [Understanding the basics of Git and GitHub](http://stackoverflow.com/questions/11816424/understanding-the-basics-of-git-and-github)
 2. [Resolving a merge conflict using the command line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 3. [Git documentation](https://git-scm.com/documentation)
