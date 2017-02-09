@@ -4,7 +4,7 @@ from pprint import pprint
 
 def lda(a, b):
 	location1 = './datasets/' + str(a)
-	id2word2 = gensim.corpora.Dictionary.load(location1)
+	id2word = gensim.corpora.Dictionary.load(location1)
 
 
 	# load corpus iterator
@@ -12,7 +12,7 @@ def lda(a, b):
 	mm = gensim.corpora.MmCorpus(location2) #Is fine
 
 
-	lda = gensim.models.ldamodel.LdaModel(corpus=mm, id2word=id2word2, num_topics=20, update_every=0, passes=20)
+	lda = gensim.models.ldamodel.LdaModel(corpus=mm, id2word=id2word, num_topics=20, update_every=0, passes=20)
 
 	lda.save('./datasets/lda.model')
 
