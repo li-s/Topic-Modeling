@@ -14,10 +14,11 @@ def lda(a, b):
 
 	lda = gensim.models.ldamodel.LdaModel(corpus=mm, id2word=id2word2, num_topics=20, update_every=0, passes=20)
 
+	lda.save('./datasets/lda.model')
 
 	pprint(lda.print_topics(20))
 	
 if __name__ == '__main__':
-	b = input('Corpus: ')
-	a = input('Dictionary: ')
+	b = input('Corpus(.mm): ')
+	a = input('Dictionary(.dict): ')
 	lda(a, b)

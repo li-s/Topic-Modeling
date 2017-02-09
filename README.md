@@ -3,9 +3,23 @@
 compare document sililarity
 
 ##Introduction
-In this repository, I experimented with the english Wikipedia, namely doing a matrix comparison between two different texts through the cosine similarity method, and, performing a Latent Dirichlet Allocation(LDA) on 10,000 evenly spaced texts within the 
+In this repository, I aimed to experiment with topic modeling, using the english Wikipedia. 
 
-## Directions
+I determined Latent Dirichlet Allocation(LDA) is a good way to achieve my goal. LDA arbitrarily sets
+
+
+
+
+
+
+In this repository, I experimented with the english Wikipedia, namely doing a matrix comparison between two different texts, and, performing a Latent Dirichlet Allocation(LDA).
+
+I wrote two programs two compare the texts using cosine similarity, one using sparce vectors, and the other using the direct output from the corpus. On the 
+ 
+ 
+on 10,000 evenly spaced texts within the texts
+
+## Methods
 1. xml1.py -> convert xml.bz2 file(wiki) to text file, and extract all text bodies
 2. prune.py -> remove common and unique words
 
@@ -19,8 +33,8 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
 5. furthur convert_for_lda.py -> represents tokens in the necessary format  
 6. lda.py -> does the lda
 
-
-###Matrix comparisons:
+###Experiments:
+####Matrix comparisons:
 -Sparce vectors:  
 3. sparce_vectors.py
 
@@ -29,7 +43,7 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
 4. matrix_compare.py
 
 
-###Make a bz2 file with only text bodies:
+####Make a bz2 file with only text bodies:
 3. make_xml.py -> make xml file with text bodies
 4. compress.py -> compresses the file
 
@@ -37,37 +51,36 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
 ##Results
 
 ### Top 20 topics of 10,000 texts in the english Wikipedia:
-[(0,  
-  '0.040*"languag" + 0.013*"use" + 0.012*"or" + 0.012*"are" + 0.010*"word" + '  
-  '0.008*"name" + 0.008*"titl" + 0.008*"by" + 0.007*"from" + 0.006*"an"'),  
- (1,  
-  '0.014*"use" + 0.013*"or" + 0.012*"music" + 0.011*"by" + 0.010*"are" + '  
-  '0.007*"an" + 0.007*"from" + 0.006*"file" + 0.006*"instrument" + '  
-  '0.005*"color"'),  
- (2,  
-  '0.018*"com" + 0.017*"titl" + 0.017*"cite" + 0.013*"web" + 0.013*"date" + '  
-  '0.013*"news" + 0.012*"music" + 0.012*"name" + 0.011*"publish" + '  
-  '0.009*"album"'),  
- (3,  
-  '0.011*"or" + 0.009*"by" + 0.009*"are" + 0.009*"book" + 0.007*"titl" + '  
-  '0.007*"an" + 0.007*"publish" + 0.007*"this" + 0.006*"cite" + 0.006*"from"'),  
- (4,  
-  '0.013*"name" + 0.013*"titl" + 0.012*"cite" + 0.012*"star" + 0.012*"date" + '  
-  '0.010*"earth" + 0.010*"day" + 0.009*"from" + 0.009*"by" + 0.009*"first"'),  
- (5,  
-  '0.017*"his" + 0.013*"by" + 0.013*"book" + 0.010*"name" + 0.010*"from" + '  
-  '0.008*"p" + 0.007*"first" + 0.007*"titl" + 0.007*"year" + 0.006*"publish"'),  
- (6,  
-  '0.014*"name" + 0.010*"are" + 0.010*"titl" + 0.010*"cite" + 0.010*"island" + '  
-  '0.009*"from" + 0.008*"year" + 0.008*"journal" + 0.008*"by" + 0.006*"river"'),  
- (7,  
-  '0.013*"com" + 0.011*"web" + 0.011*"name" + 0.010*"titl" + 0.010*"cite" + '  
-  '0.009*"date" + 0.008*"use" + 0.008*"by" + 0.008*"game" + 0.007*"publish"'),  
- (8,  
-  '0.017*"his" + 0.012*"titl" + 0.011*"name" + 0.011*"publish" + 0.011*"cite" '  
-  '+ 0.011*"book" + 0.010*"by" + 0.009*"univers" + 0.009*"first" + '  
-  '0.008*"work"'),  
- (9,  
+```
+Topic 1:  '0.040*"languag" + 0.013*"use" + 0.012*"or" + 0.012*"are" + 0.010*"word" + ''0.008*"name" + 0.008*"titl" + 0.008*"by" + 0.007*"from" + 0.006*"an"'
+Topic 2:  
+  '0.014*"use" + 0.013*"or" + 0.012*"music" + 0.011*"by" + 0.010*"are" + '
+  '0.007*"an" + 0.007*"from" + 0.006*"file" + 0.006*"instrument" + '
+  '0.005*"color"'
+Topic 3:  
+  '0.018*"com" + 0.017*"titl" + 0.017*"cite" + 0.013*"web" + 0.013*"date" + '
+  '0.013*"news" + 0.012*"music" + 0.012*"name" + 0.011*"publish" + '
+  '0.009*"album"'
+Topic 4:  
+  '0.011*"or" + 0.009*"by" + 0.009*"are" + 0.009*"book" + 0.007*"titl" + '
+  '0.007*"an" + 0.007*"publish" + 0.007*"this" + 0.006*"cite" + 0.006*"from"'),
+Topic 5:
+  '0.013*"name" + 0.013*"titl" + 0.012*"cite" + 0.012*"star" + 0.012*"date" + '
+  '0.010*"earth" + 0.010*"day" + 0.009*"from" + 0.009*"by" + 0.009*"first"'),
+Topic 6:  
+  '0.017*"his" + 0.013*"by" + 0.013*"book" + 0.010*"name" + 0.010*"from" + '
+  '0.008*"p" + 0.007*"first" + 0.007*"titl" + 0.007*"year" + 0.006*"publish"'
+Topic 7:  
+  '0.014*"name" + 0.010*"are" + 0.010*"titl" + 0.010*"cite" + 0.010*"island" + '
+  '0.009*"from" + 0.008*"year" + 0.008*"journal" + 0.008*"by" + 0.006*"river"'
+Topic 8:  
+  '0.013*"com" + 0.011*"web" + 0.011*"name" + 0.010*"titl" + 0.010*"cite" + '
+  '0.009*"date" + 0.008*"use" + 0.008*"by" + 0.008*"game" + 0.007*"publish"'
+Topic 9:  
+  '0.017*"his" + 0.012*"titl" + 0.011*"name" + 0.011*"publish" + 0.011*"cite" '
+  '+ 0.011*"book" + 0.010*"by" + 0.009*"univers" + 0.009*"first" + '
+  '0.008*"work"'
+Topic 10:
   '0.026*"film" + 0.012*"com" + 0.012*"titl" + 0.011*"name" + 0.010*"cite" + '  
   '0.010*"his" + 0.009*"by" + 0.008*"date" + 0.008*"web" + 0.007*"award"'),  
  (10,  
@@ -103,6 +116,7 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
  (19,  
   '0.018*"journal" + 0.013*"titl" + 0.012*"cite" + 0.012*"name" + 0.010*"sub" '  
   '+ 0.010*"page" + 0.010*"are" + 0.009*"volum" + 0.008*"by" + 0.007*"use"')]  
+```
 
 ### Top 20 topics of short texts from the 10,000 texts:
 [(0,  
