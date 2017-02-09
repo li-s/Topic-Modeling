@@ -1,11 +1,8 @@
-# Doc_similarity
+# Topic Modeling by Latent Dirichlet Allocation
 
-compare document sililarity
-
-##Introduction
 In this repository, I experimented with the english Wikipedia, namely doing a matrix comparison between two different texts through the cosine similarity method, and, performing a Latent Dirichlet Allocation(LDA) on 10,000 evenly spaced texts within the 
 
-## Directions
+## Implementation Details
 1. xml1.py -> convert xml.bz2 file(wiki) to text file, and extract all text bodies
 2. prune.py -> remove common and unique words
 
@@ -34,7 +31,7 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
 4. compress.py -> compresses the file
 
 
-##Results
+## Results
 
 ### Top 20 topics of 10,000 texts in the english Wikipedia:
 [(0,  
@@ -186,7 +183,7 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
   '0.024*"holi"')]  
 
 
-### Furthur readings
+### Miscellaneous
 1. [Understanding the basics of Git and GitHub](http://stackoverflow.com/questions/11816424/understanding-the-basics-of-git-and-github)
 2. [Resolving a merge conflict using the command line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 3. [Git documentation](https://git-scm.com/documentation)
