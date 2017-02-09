@@ -1,6 +1,12 @@
 # Topic Modeling by Latent Dirichlet Allocation
 
-In this repository, I experimented with the english Wikipedia, namely doing a matrix comparison between two different texts through the cosine similarity method, and, performing a Latent Dirichlet Allocation(LDA) on 10,000 evenly spaced texts within the 
+Topic models are not only good for exploring new data, but in also complementing supervised machine learning in constructing and checking the accuracy of classification models.
+
+I chose to utilise Latent Dirichlet Allocation(LDA) as a form of topic modeling in this repository, which views documents as a mixture of various topics, similiar to probablilistic latent semantic analysis(pLSA).
+
+In this repository, I performed LDA on the first 10,000 texts in the english wikipedia. Using gensim, I found the top 20 topics of the texts found below.
+
+Through this process, I have written some other codes, such as comparing two matrixes using cosine similarity, or making and then compressing a .xml file.
 
 ## Implementation Details
 
@@ -19,10 +25,10 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
 
 #### Matrix comparisons:
 
--Sparce vectors:  
+#####Sparce vectors:  
 3. sparce_vectors.py
 
--Matrix format:  
+#####Matrix format:  
 3. matrix_convert.py  
 4. matrix_compare.py
 
@@ -61,85 +67,6 @@ Topic 20:  0.018*"journal" + 0.013*"titl" + 0.012*"cite" + 0.012*"name" + 0.010*
 ```
 
 ### Top 20 topics of short texts from the 10,000 texts:
-[(0,  
-  '0.024*"may" + 0.024*"refer" + 0.024*"count" + 0.024*"duke" + 0.024*"born" + '  
-  '0.024*"pope" + 0.024*"great" + 0.024*"emperor" + 0.024*"surnam" + '  
-  '0.024*"linguist"'),  
- (1,  
-  '0.024*"may" + 0.024*"refer" + 0.024*"duke" + 0.024*"count" + 0.024*"roman" '  
-  '+ 0.024*"emperor" + 0.024*"born" + 0.024*"great" + 0.024*"pope" + '  
-  '0.024*"surnam"'),  
- (2,  
-  '0.186*"footbal" + 0.095*"may" + 0.095*"refer" + 0.095*"former" + '  
-  '0.095*"name" + 0.095*"stage" + 0.095*"artist" + 0.095*"born" + 0.005*"duke" '  
-  '+ 0.005*"count"'),  
- (3,  
-  '0.024*"may" + 0.024*"refer" + 0.024*"count" + 0.024*"duke" + 0.024*"roman" '  
-  '+ 0.024*"great" + 0.024*"holi" + 0.024*"born" + 0.024*"emperor" + '  
-  '0.024*"pope"'),  
- (4,  
-  '0.024*"may" + 0.024*"refer" + 0.024*"duke" + 0.024*"count" + 0.024*"roman" '  
-  '+ 0.024*"great" + 0.024*"emperor" + 0.024*"surnam" + 0.024*"born" + '  
-  '0.024*"holi"'),  
- (5,  
-  '0.204*"pope" + 0.104*"refer" + 0.104*"may" + 0.104*"die" + '  
-  '0.104*"patriarch" + 0.104*"emperor" + 0.104*"roman" + 0.005*"count" + '  
-  '0.005*"duke" + 0.005*"born"'),  
- (6,  
-  '0.024*"may" + 0.024*"refer" + 0.024*"duke" + 0.024*"count" + 0.024*"born" + '  
-  '0.024*"great" + 0.024*"roman" + 0.024*"emperor" + 0.024*"pope" + '  
-  '0.024*"holi"'),  
- (7,  
-  '0.024*"may" + 0.024*"refer" + 0.024*"count" + 0.024*"duke" + 0.024*"born" + '  
-  '0.024*"emperor" + 0.024*"pope" + 0.024*"great" + 0.024*"roman" + '  
-  '0.024*"holi"'),  
- (8,  
-  '0.024*"refer" + 0.024*"may" + 0.024*"count" + 0.024*"duke" + 0.024*"roman" '  
-  '+ 0.024*"born" + 0.024*"pope" + 0.024*"footbal" + 0.024*"great" + '  
-  '0.024*"holi"'),  
- (9,  
-  '0.024*"may" + 0.024*"refer" + 0.024*"count" + 0.024*"duke" + 0.024*"pope" + '  
-  '0.024*"born" + 0.024*"roman" + 0.024*"great" + 0.024*"emperor" + '  
-  '0.024*"holi"'),  
- (10,  
-  '0.024*"may" + 0.024*"refer" + 0.024*"duke" + 0.024*"count" + 0.024*"pope" + '  
-  '0.024*"roman" + 0.024*"great" + 0.024*"emperor" + 0.024*"holi" + '  
-  '0.024*"footbal"'),  
- (11,  
-  '0.024*"refer" + 0.024*"may" + 0.024*"count" + 0.024*"duke" + 0.024*"great" '  
-  '+ 0.024*"roman" + 0.024*"emperor" + 0.024*"born" + 0.024*"pope" + '  
-  '0.024*"artist"'),  
- (12,  
-  '0.152*"born" + 0.152*"surnam" + 0.102*"philosoph" + 0.052*"peopl" + '  
-  '0.052*"theologian" + 0.052*"includ" + 0.052*"historian" + 0.052*"notabl" + '  
-  '0.052*"sociologist" + 0.052*"sometim"'),  
- (13,  
-  '0.146*"danish" + 0.146*"astronom" + 0.146*"linguist" + 0.075*"radio" + '  
-  '0.075*"southern" + 0.075*"person" + 0.075*"observatori" + 0.075*"refer" + '  
-  '0.075*"may" + 0.004*"duke"'),  
- (14,  
-  '0.024*"refer" + 0.024*"may" + 0.024*"count" + 0.024*"duke" + 0.024*"great" '  
-  '+ 0.024*"roman" + 0.024*"holi" + 0.024*"born" + 0.024*"emperor" + '  
-  '0.024*"pope"'),  
- (15,  
-  '0.240*"count" + 0.240*"duke" + 0.145*"may" + 0.145*"refer" + 0.050*"from" + '  
-  '0.050*"fat" + 0.050*"great" + 0.002*"c" + 0.002*"princ" + 0.002*"call"'),  
- (16,  
-  '0.024*"refer" + 0.024*"may" + 0.024*"duke" + 0.024*"count" + 0.024*"born" + '  
-  '0.024*"emperor" + 0.024*"great" + 0.024*"roman" + 0.024*"surnam" + '  
-  '0.024*"artist"'),  
- (17,  
-  '0.024*"refer" + 0.024*"may" + 0.024*"duke" + 0.024*"count" + 0.024*"great" '  
-  '+ 0.024*"emperor" + 0.024*"pope" + 0.024*"roman" + 0.024*"born" + '  
-  '0.024*"surnam"'),  
- (18,  
-  '0.190*"roman" + 0.190*"emperor" + 0.190*"holi" + 0.065*"also" + 0.065*"see" '  
-  '+ 0.065*"disambigu" + 0.065*"refer" + 0.065*"may" + 0.003*"count" + '  
-  '0.003*"duke"'),  
- (19,  
-  '0.024*"refer" + 0.024*"may" + 0.024*"count" + 0.024*"duke" + 0.024*"great" '  
-  '+ 0.024*"born" + 0.024*"emperor" + 0.024*"pope" + 0.024*"roman" + '  
-  '0.024*"holi"')]  
 
 
 ## Miscellaneous
@@ -147,4 +74,5 @@ Topic 20:  0.018*"journal" + 0.013*"titl" + 0.012*"cite" + 0.012*"name" + 0.010*
 2. [Resolving a merge conflict using the command line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 3. [Git documentation](https://git-scm.com/documentation)
 4. [Markdown basics for README.md](https://guides.github.com/features/mastering-markdown/)
+
 
