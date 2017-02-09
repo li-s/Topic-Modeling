@@ -7,7 +7,7 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
 2. prune.py -> remove common and unique words
 
 
-###LDA:
+#### LDA:
 3. lda.py -> does the lda
 
 (or additionally,)  
@@ -17,7 +17,7 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
 6. lda.py -> does the lda
 
 
-###Matrix comparisons:
+#### Matrix comparisons:
 -Sparce vectors:  
 3. sparce_vectors.py
 
@@ -26,7 +26,7 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
 4. matrix_compare.py
 
 
-###Make a bz2 file with only text bodies:
+#### Make a bz2 file with only text bodies:
 3. make_xml.py -> make xml file with text bodies
 4. compress.py -> compresses the file
 
