@@ -58,7 +58,7 @@ def make_dict(a_text):
 	corpora.MmCorpus.serialize('datasets/the_short_corpus.mm', corpus)
 	
 	# compiles a dictionary and a corpus for LDA
-	return document
+	return None
 	
 if __name__ == '__main__':
 	start1 = time()
