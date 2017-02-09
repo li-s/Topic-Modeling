@@ -4,7 +4,7 @@ Topic models are not only good for exploring new data, but in also complementing
 
 I chose to utilise Latent Dirichlet Allocation(LDA) as a form of topic modeling in this repository, which views documents as a mixture of various topics, similiar to probablilistic latent semantic analysis(pLSA).
 
-In this repository, I performed LDA on the first 10,000 texts in the english wikipedia. Using gensim, I found the top 20 topics of the texts found below.
+In this repository, I performed LDA on the first 10,000 texts in the english wikipedia. Using gensim, I found the top 20 topics of the texts found below. Furthurmore, I perform _____ on the shortest 3 texts within the Wikipedia(short_texts.txt), of which the result can be found below.
 
 Through this process, I have written some other codes, such as comparing two matrixes using cosine similarity, or making and then compressing a .xml file.
 

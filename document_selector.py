@@ -32,7 +32,10 @@ def select(a_text, position):
 		document.append(texts[i])
 	
 	#selected the original text, which is then returned
-		
+	return document
+	
+def make_dict(a_text):
+	a_text = texts
 	
 	en_word_pattern = re.compile('[a-z]+')
 	texts = [[token for token in text if en_word_pattern.match(token)]for text in texts]
@@ -64,5 +67,8 @@ if __name__ == '__main__':
 		positions = identify(read)
 	with open('./data/short_texts.txt', 'w') as w:
 		with open('./data/extracted_texts.txt', 'r') as b:
-			pprint(select(b, positions), stream = w)
+			text = select(b, positions)
+			pprint(text, stream = w)
+	print('Step1: {}'.format(time()-start1))
+	make_texts(text)
 	print('Program ran for: {}'.format(time()-start1))
