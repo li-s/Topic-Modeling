@@ -1,33 +1,28 @@
 # Topic Modeling by Latent Dirichlet Allocation
 
-Topic models are not only good for exploring new data, but in also complementing supervised machine learning in constructing and checking the accuracy of classification models.
+[what is topic model? views documents as a mixture of various topics]
+Topic models are not only used for exploring hidden semantic structures in new textual data, but for also complementing supervised machine learning in constructing and checking the accuracy of existing classification models.
 
-I chose to utilise Latent Dirichlet Allocation(LDA) as a form of topic modeling in this repository, which views documents as a mixture of various topics, similiar to probablilistic latent semantic analysis(pLSA).
-
-In this repository, I performed LDA on the first 10,000 texts in the english wikipedia. Using gensim, I found the top 20 topics of the texts found below. Furthurmore, I perform _____ on the shortest 3 texts within the Wikipedia(short_texts.txt), of which the result can be found below.
+In this repository, I chose to utilise Latent Dirichlet Allocation(LDA) for topic modeling. I trained LDA on a subset of the English wikipedia corpus, and found the top 20 topics of the texts found below. Furthurmore, I used the trained LDA to predict topic distributions on 3 seletected texts within the corpus(short_texts.txt), of which the result can be found below.
 
 Through this process, I have written some other codes, such as comparing two matrixes using cosine similarity, or making and then compressing a .xml file.
 
 ## Implementation Details
 
-1. xml1.py -> convert xml.bz2 file(wiki) to text file, and extract all text bodies
+1. xml1.py -> convert xml.bz2 file(wiki) to text file, and extract all text bodies [how does the texts selected? total no. and interval ...]
 2. prune.py -> remove common and unique words
+3. [how is dictionary built]
+4. [how to convert a text to a bow vetor? how does the vector represent? sparse .. full ...]
+5. lda.py -> does the lda
 
+#### Move to Miscs:
 
-#### LDA:
-3. lda.py -> does the lda
-
-(or additionally,)  
 3. convert_for_lda.py -> represents tokens in the necessary format  
 4. quick_sort -> align ID(most right collum) in increasing order  
 5. furthur convert_for_lda.py -> represents tokens in the necessary format  
 6. lda.py -> does the lda
-
-#### Matrix comparisons:
-
 #####Sparce vectors:  
 3. sparce_vectors.py
-
 #####Matrix format:  
 3. matrix_convert.py  
 4. matrix_compare.py
@@ -42,7 +37,7 @@ Through this process, I have written some other codes, such as comparing two mat
 
 ## Results
 
-### Top 20 topics of 10,000 texts in the english Wikipedia:
+#### Top 20 topics of 10,000 texts in the english Wikipedia:
 ```
 Topic 1:  0.040*"languag" + 0.013*"use" + 0.012*"or" + 0.012*"are" + 0.010*"word" + 0.008*"name" + 0.008*"titl" + 0.008*"by" + 0.007*"from" + 0.006*"an"  
 Topic 2:  0.014*"use" + 0.013*"or" + 0.012*"music" + 0.011*"by" + 0.010*"are" + 0.007*"an" + 0.007*"from" + 0.006*"file" + 0.006*"instrument" + 0.005*"color"  
@@ -66,8 +61,10 @@ Topic 19:  0.049*"b" + 0.045*"d" + 0.018*"player" + 0.017*"politician" + 0.013*"
 Topic 20:  0.018*"journal" + 0.013*"titl" + 0.012*"cite" + 0.012*"name" + 0.010*"sub" + 0.010*"page" + 0.010*"are" + 0.009*"volum" + 0.008*"by" + 0.007*"use"  
 ```
 
-### Top 20 topics of short texts from the 10,000 texts:
+
+#### Top 20 topics of short texts from the 10,000 texts:
 [[(4, 0.11388034488609908), (5, 0.055074928797886273), (7, 0.72690207904542692), (11, 0.07073416980982021), (17, 0.013578074223494177)], 
+
 
 [(4, 0.063833696251872213), (7, 0.80456719995350756), (11, 0.095537977349093375), (17, 0.029859575911871231)], 
 
