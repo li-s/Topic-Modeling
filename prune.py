@@ -10,7 +10,7 @@ from nltk.stem.snowball import SnowballStemmer
 
 def remove(a_text):
 	texts = ' '.join(a_text)
-	remove = ('the, be, to, of, and, a, in, that, have, i, it, for, not, on, with, he, as, you, do, at, n, www, html, http, ref, org, was, is, s, are, were, by, titl, or, ii, iii, d, x, b, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0'.split(', '))    #20 most common english words + web urls
+	remove = ('the, be, to, of, and, a, in, that, have, i, it, for, not, on, with, he, as, you, do, at, n, www, html, http, ref, org, was, is, s, are, were, by, titl, or, ii, iii, d, x, b, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0'.split(', '))
 	remove_white_space = ['']
 	
 	texts = [word.lower() for word in re.split('\W', texts) if(word.lower() not in remove) 			and (word not in remove_white_space)]
