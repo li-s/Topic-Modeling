@@ -183,7 +183,7 @@ In this repository, I experimented with the english Wikipedia, namely doing a ma
   '0.024*"holi"')]  
 
 
-### Miscellaneous
+## Miscellaneous
 1. [Understanding the basics of Git and GitHub](http://stackoverflow.com/questions/11816424/understanding-the-basics-of-git-and-github)
 2. [Resolving a merge conflict using the command line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 3. [Git documentation](https://git-scm.com/documentation)
