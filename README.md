@@ -3,7 +3,7 @@
 compare document sililarity
 
 ##Introduction
-
+In this repository, I experimented with the english Wikipedia, namely doing a matrix comparison between two different texts through the cosine similarity method, and, performing a Latent Dirichlet Allocation(LDA) on 10,000 evenly spaced texts within the 
 
 ## Directions
 1. xml1.py -> convert xml.bz2 file(wiki) to text file, and extract all text bodies
