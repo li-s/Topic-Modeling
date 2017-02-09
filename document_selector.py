@@ -35,7 +35,7 @@ def select(a_text, position):
 	return document
 	
 def make_dict(a_text):
-	a_text = texts
+	texts = a_text
 	
 	en_word_pattern = re.compile('[a-z]+')
 	texts = [[token for token in text if en_word_pattern.match(token)]for text in texts]
@@ -70,5 +70,5 @@ if __name__ == '__main__':
 			text = select(b, positions)
 			pprint(text, stream = w)
 	print('Step1: {}'.format(time()-start1))
-	make_texts(text)
+	make_dict(text)
 	print('Program ran for: {}'.format(time()-start1))
