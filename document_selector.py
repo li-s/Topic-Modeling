@@ -24,9 +24,6 @@ def select(a_text, position):
 	texts = ' '.join(texts)
 	texts = texts.split('abcdefghijklmnopqrstuvwxyzzz')
 	
-	stemmer = SnowballStemmer("english")	
-	texts = [stemmer.stem(text) for text in texts]
-	
 	document = []
 	for i in position:
 		document.append(texts[i])
