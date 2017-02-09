@@ -9,11 +9,11 @@ Through this process, I have written some other codes, such as comparing two mat
 
 ## Implementation Details
 
-1. xml1.py -> convert xml.bz2 file(wiki) to text file, and extract all text bodies [how does the texts selected? total no. and interval ...]
-2. prune.py -> remove common and unique words
-3. [how is dictionary built]
-4. [how to convert a text to a bow vetor? how does the vector represent? sparse .. full ...]
-5. lda.py -> does the lda
+1. xml1.py -> Convert xml.bz2 file(wiki) to text file, and extract all text bodies. The first 10,000 texts are selected and saved(extracted_texts.txt).
+2. prune.py -> Remove common and unique words, and non-english syllybus
+            -> Creates and saves the dictionary(the_dictionary.dict).
+            -> Creates sparce vectors representing the token frequency in each text(text_vectors.txt)
+5. lda.py -> Performes the Latend Dirichlet Analysis
 
 #### Move to Miscs:
 
@@ -62,7 +62,7 @@ Topic 20:  0.018*"journal" + 0.013*"titl" + 0.012*"cite" + 0.012*"name" + 0.010*
 ```
 
 
-#### Short texts:
+#### Short texts similiarity:
 ##### Text 1:
 
 ###### Raw text:
