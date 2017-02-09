@@ -67,7 +67,27 @@ Topic 20:  0.018*"journal" + 0.013*"titl" + 0.012*"cite" + 0.012*"name" + 0.010*
 ```
 
 ### Top 20 topics of short texts from the 10,000 texts:
+[[(4, 0.11388034488609908), (5, 0.055074928797886273), (7, 0.72690207904542692), (11, 0.07073416980982021), (17, 0.013578074223494177)], 
 
+[(4, 0.063833696251872213), (7, 0.80456719995350756), (11, 0.095537977349093375), (17, 0.029859575911871231)], 
+
+[(5, 0.034055716872079027), (7, 0.088255718340154304), (11, 0.87124917069715058)]]
+
+
+
+[' alfonso may refer to alfonso of asturias 791 842 alfonso of aragon 1162 '
+ '1196 alfonso count of provence 1174 1209 afonso of portugal 1185 1223 the '
+ 'fat alfonso count of poitou 1220 1271 jure uxoris alfonso count of toulouse '
+ 'alfonso of naples 1448 1495 alfonso este 1533 1597 duke of ferrara from 1559 '
+ 'to 1597 hndis de liste der herrscher namens alfons alfons ',
+ 
+ ' alfonso may refer to alfonso of leon 866 910 surnamed the great afonso of '
+ 'portugal 1210 1279 alfonso of aragon 1285 1291 alfonso este duke of modena '
+ 'and reggio 1628 1644 alfonso of kongo 1666 1667 hndis ',
+ 
+ ' anastasius or anastasios may refer to anastasius dicorus 430 518 roman '
+ 'emperor anastasius of antioch 599 patriarch of antioch pope anastasius died '
+ '401 pope of rome hndis ']
 
 ## Miscellaneous
 1. [Understanding the basics of Git and GitHub](http://stackoverflow.com/questions/11816424/understanding-the-basics-of-git-and-github)

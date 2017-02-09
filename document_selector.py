@@ -12,7 +12,6 @@ def identify(text):
 	for i in range(len(text)):
 		if len(text[i]) <= 8:
 			all_positions.append(i)
-	print(all_positions)
 	return all_positions
 	
 def select(a_text, position):
@@ -28,11 +27,10 @@ def select(a_text, position):
 	stemmer = SnowballStemmer("english")	
 	texts = [stemmer.stem(text) for text in texts]
 	
-	document = []	
+	document = []
 	for i in position:
 		document.append(texts[i])
-	
-	#selected the original text, which is then returned
+
 	return document
 	
 def make_dict(a_text):
@@ -52,8 +50,13 @@ def make_dict(a_text):
 			frequency[token] += 1
 	texts = [[token for token in text if frequency[token]>1]for text in texts]
 	
+	
+	dictionary = corpora.Dictionary(texts)
+	dictionary.save_as_text('datasets/the_shirt_dictionary.txt')
+	dictionary.save('datasets/the_short_dictionary.dict')
 	corpus = [dictionary.doc2bow(text) for text in texts] 
-	corpora.MmCorpus.serialize('datasets/the_corpus.mm', corpus)
+	corpora.MmCorpus.serialize('datasets/the_short_corpus.mm', corpus)
+
 
 	return corpus
 	
