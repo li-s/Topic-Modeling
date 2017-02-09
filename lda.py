@@ -2,23 +2,22 @@ import gensim
 import bz2
 from pprint import pprint
 
-#id2word1 = gensim.corpora.Dictionary.load_from_text('./data/use_this_lda.txt')
-id2word2 = gensim.corpora.Dictionary.load('./datasets/the_dictionary.dict')
+def lda(a, b):
+	location1 = './datasets/' + str(a)
+	id2word2 = gensim.corpora.Dictionary.load(location1)
 
 
 	# load corpus iterator
-mm = gensim.corpora.MmCorpus('./datasets/the_corpus.mm') #Is fine
-
-print(mm)
-
-
-#lda1 = gensim.models.ldamodel.LdaModel(corpus=mm, id2word=id2word1, num_topics=3, update_every=0, passes=20)
-
-lda2 = gensim.models.ldamodel.LdaModel(corpus=mm, id2word=id2word2, num_topics=20, update_every=0, passes=20)
+	location2 = './datasets/' + str(b)
+	mm = gensim.corpora.MmCorpus(location2) #Is fine
 
 
-#lda = gensim.models.ldamodel.LdaModel(corpus=mm, id2word=id2word, num_topics=100, update_every=1, chunksize=10000, passes=1)
+	lda = gensim.models.ldamodel.LdaModel(corpus=mm, id2word=id2word2, num_topics=20, update_every=0, passes=20)
 
-print(lda1)
-#pprint(lda1.print_topics(3))
-pprint(lda2.print_topics(20))
+
+	pprint(lda.print_topics(20))
+	
+if __name__ == '__main__':
+	b = input('Corpus: ')
+	a = input('Dictionary: ')
+	lda(a, b)
