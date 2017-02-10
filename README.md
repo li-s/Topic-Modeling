@@ -76,6 +76,19 @@ With 44.985092367981577%  confidence.
 
 
 
+##### Text 2:
+
+###### Raw text:
+>The violin is a wooden string instrument in the violin family. It is the smallest and highest-pitched instrument in the family in regular use. Smaller violin-type instruments are known, including the violino piccolo and the kit violin, but these are virtually unused in the 2010s. The violin typically has four strings tuned in perfect fifths, and is most commonly played by drawing a bow across its strings, though it can also be played by plucking the strings with the fingers (pizzicato). Violins are important instruments in a wide variety of musical genres. They are most prominent in the Western classical tradition and in many varieties of folk music. They are also frequently used in genres of folk including country music and bluegrass music and in jazz. Electric violins are used in some forms of rock music; further, the violin has come to be played in many non-Western music cultures, including Indian music and Iranian music. The violin is sometimes informally called a fiddle, particularly in Irish traditional music and bluegrass, but this nickname is also used regardless of the type of music played on it.
+
+###### Topic similiarity
+Most similiar to topic 19:  
+0.017*"book" + 0.011*"church" + 0.009*"titl" + 0.009*"name" + 0.009*"from" + 0.008*"publish" + 0.008*"first" + 0.008*"god" + 0.007*"cite" + 0.006*"year"
+
+with 35.710325504071261% confidence.
+
+
+
 ## Miscellaneous
 + `convert_for_lda.py`: represents tokens in the necessary format  
 + `quick_sort.py`: align ID(most right collum) in increasing order  
