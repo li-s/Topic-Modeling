@@ -47,23 +47,9 @@ Topic 20:  0.018*"journal" + 0.013*"titl" + 0.012*"cite" + 0.012*"name" + 0.010*
 ##### Text 1:
 
 ###### Raw text:
-alfonso may refer to alfonso of asturias 791 842 alfonso of aragon 1162 1196 alfonso count of provence 1174 1209 afonso of portugal 1185 1223 the fat alfonso count of poitou 1220 1271 jure uxoris alfonso count of toulouse alfonso of naples 1448 1495 alfonso este 1533 1597 duke of ferrara from 1559 to 1597 hndis de liste der herrscher namens alfons alfons
+The Federal Reserve Act created a system of private and public entities. There were to be at least eight and no more than twelve private regional Federal Reserve banks. Twelve were established, and each had various branches, a board of directors, and district boundaries. The Federal Reserve Board, consisting of seven members, was created as the governing body of the Fed. Each member is appointed by the President of the U.S and confirmed by the U.S. Senate. In 1935, the Board was renamed and restructured. Also created as part of the Federal Reserve System was a 12-member Federal Advisory Committee and a single new United States currency, the Federal Reserve Note. The Federal Reserve Act created a national currency and a monetary system that could respond effectively to the stresses in the banking system and create a stable financial system. With the goal of creating a national monetary system and financial stability, the Federal Reserve Act also provided many other functions and financial services for the economy, such as check clearing and collection for all members of the Federal Reserve.
 
 ###### Topic similiarity:
-Most similiar to:
-Topic 7:  0.014*"name" + 0.010*"are" + 0.010*"titl" + 0.010*"cite" + 0.010*"island" + 0.009*"from" + 0.008*"year" + 0.008*"journal" + 0.008*"by" + 0.006*"river" 
-
-With percentage: 72.690207904542692%
-
-##### Text 2:
-###### Raw text:
-alfonso may refer to alfonso of leon 866 910 surnamed the great afonso of portugal 1210 1279 alfonso of aragon 1285 1291 alfonso este duke of modena and reggio 1628 1644 alfonso of kongo 1666 1667 hndis
-
-###### Topic similiarity:
-Most similiar to:
-Topic 7:  0.014*"name" + 0.010*"are" + 0.010*"titl" + 0.010*"cite" + 0.010*"island" + 0.009*"from" + 0.008*"year" + 0.008*"journal" + 0.008*"by" + 0.006*"river" 
-
-With percentage: 80.456719995350756%
 
 
 ## Miscellaneous
