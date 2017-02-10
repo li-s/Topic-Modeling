@@ -14,7 +14,7 @@ Through this process, I have written some other codes, such as comparing two mat
 3. Create and saves the dictionary(the_dictionary.dict). (See `prune.py`)
 4. Create sparse vectors representing the token frequency in each text (text_vectors.txt). (See `prune.py`)
 5. Train the Latend Dirichlet Analysis model. (See `lda.py`)
-6. Predict topic distribution given a text.
+6. Predict topic distribution given a text. (See `lda_comparison.py`)
 
 ## Results
 
