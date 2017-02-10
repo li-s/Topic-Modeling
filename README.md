@@ -10,9 +10,9 @@ Through this process, I have written some other codes, such as comparing two mat
 ## Implementation Details
 
 1. xml1.py -> Convert xml.bz2 file(wiki) to text file, and extract all text bodies. The first 10,000 texts are selected and saved(extracted_texts.txt).
-2. prune.py -> Remove common and unique words, and non-english syllybus
+2. prune.py -> Remove common and unique words, and non-english syllybus  
             -> Creates and saves the dictionary(the_dictionary.dict).
-            -> Creates sparce vectors representing the token frequency in each text(text_vectors.txt)
+            -> Creates sparce vectors representing the token frequency in each text  (text_vectors.txt)
 5. lda.py -> Performes the Latend Dirichlet Analysis
 
 #### Move to Miscs:
@@ -21,10 +21,12 @@ Through this process, I have written some other codes, such as comparing two mat
 4. quick_sort -> align ID(most right collum) in increasing order  
 5. furthur convert_for_lda.py -> represents tokens in the necessary format  
 6. lda.py -> does the lda
-#####Sparce vectors:  
+
+#####Sparce vectors:
 3. sparce_vectors.py
-#####Matrix format:  
-3. matrix_convert.py  
+
+#####Matrix format: 
+3. matrix_convert.py
 4. matrix_compare.py
 
 
