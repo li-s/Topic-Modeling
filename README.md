@@ -56,8 +56,7 @@ Topic 17: 0.014*"com" + 0.013*"titl" + 0.011*"album" + 0.011*"cite" + 0.010*"mus
 
 Topic 18: 0.027*"his" + 0.014*"book" + 0.010*"name" + 0.010*"publish" + 0.009*"first" + 0.009*"categori" + 0.009*"titl" + 0.009*"work" + 0.008*"from" + 0.008*"year"  
 
-Topic 19:
-0.017*"book" + 0.011*"church" + 0.009*"titl" + 0.009*"name" + 0.009*"from" + 0.008*"publish" + 0.008*"first" + 0.008*"god" + 0.007*"cite" + 0.006*"year"  
+Topic 19: 0.017*"book" + 0.011*"church" + 0.009*"titl" + 0.009*"name" + 0.009*"from" + 0.008*"publish" + 0.008*"first" + 0.008*"god" + 0.007*"cite" + 0.006*"year"  
 
 Topic 20: 0.106*"align" + 0.071*"right" + 0.046*"style" + 0.032*"text" + 0.024*"center" + 0.013*"footbal" + 0.011*"left" + 0.010*"width" + 0.010*"world" + 0.009*"name"  
 ```
@@ -70,9 +69,10 @@ Topic 20: 0.106*"align" + 0.071*"right" + 0.046*"style" + 0.032*"text" + 0.024*"
 >The Federal Reserve Act created a system of private and public entities. There were to be at least eight and no more than twelve private regional Federal Reserve banks. Twelve were established, and each had various branches, a board of directors, and district boundaries. The Federal Reserve Board, consisting of seven members, was created as the governing body of the Fed. Each member is appointed by the President of the U.S and confirmed by the U.S. Senate. In 1935, the Board was renamed and restructured. Also created as part of the Federal Reserve System was a 12-member Federal Advisory Committee and a single new United States currency, the Federal Reserve Note. The Federal Reserve Act created a national currency and a monetary system that could respond effectively to the stresses in the banking system and create a stable financial system. With the goal of creating a national monetary system and financial stability, the Federal Reserve Act also provided many other functions and financial services for the economy, such as check clearing and collection for all members of the Federal Reserve.
 
 ###### Topic similiarity:
-Most similiar to topic 5: 0.013*"use" + 0.010*"comput" + 0.009*"system" + 0.009*"web" + 0.008*"code" + 0.008*"titl" + 0.008*"com" + 0.008*"name" + 0.007*"cite" + 0.007*"an"
+Most similiar to topic 5:  
+0.013*"use" + 0.010*"comput" + 0.009*"system" + 0.009*"web" + 0.008*"code" + 0.008*"titl" + 0.008*"com" + 0.008*"name" + 0.007*"cite" + 0.007*"an"
 
-With 44.985092367981577% confidence
+With 44.985092367981577%  confidence.
 
 
 
