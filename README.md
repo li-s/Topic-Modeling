@@ -69,10 +69,10 @@ Topic 20: 0.106*"align" + 0.071*"right" + 0.046*"style" + 0.032*"text" + 0.024*"
 >The Federal Reserve Act created a system of private and public entities. There were to be at least eight and no more than twelve private regional Federal Reserve banks. Twelve were established, and each had various branches, a board of directors, and district boundaries. The Federal Reserve Board, consisting of seven members, was created as the governing body of the Fed. Each member is appointed by the President of the U.S and confirmed by the U.S. Senate. In 1935, the Board was renamed and restructured. Also created as part of the Federal Reserve System was a 12-member Federal Advisory Committee and a single new United States currency, the Federal Reserve Note. The Federal Reserve Act created a national currency and a monetary system that could respond effectively to the stresses in the banking system and create a stable financial system. With the goal of creating a national monetary system and financial stability, the Federal Reserve Act also provided many other functions and financial services for the economy, such as check clearing and collection for all members of the Federal Reserve.
 
 ###### Topic similiarity:
-Most similiar to topic 5:  
-0.013*"use" + 0.010*"comput" + 0.009*"system" + 0.009*"web" + 0.008*"code" + 0.008*"titl" + 0.008*"com" + 0.008*"name" + 0.007*"cite" + 0.007*"an"
+Most similiar to topic 4:  
+0.014*"state" + 0.010*"titl" + 0.010*"cite" + 0.008*"unit" + 0.008*"parti" + 0.008*"name" + 0.008*"nation" + 0.007*"date" + 0.007*"govern" + 0.007*"publish"
 
-With 44.985092367981577%  confidence.
+With 47.625570439519227  confidence.
 
 
 
@@ -82,10 +82,10 @@ With 44.985092367981577%  confidence.
 >The violin is a wooden string instrument in the violin family. It is the smallest and highest-pitched instrument in the family in regular use. Smaller violin-type instruments are known, including the violino piccolo and the kit violin, but these are virtually unused in the 2010s. The violin typically has four strings tuned in perfect fifths, and is most commonly played by drawing a bow across its strings, though it can also be played by plucking the strings with the fingers (pizzicato). Violins are important instruments in a wide variety of musical genres. They are most prominent in the Western classical tradition and in many varieties of folk music. They are also frequently used in genres of folk including country music and bluegrass music and in jazz. Electric violins are used in some forms of rock music; further, the violin has come to be played in many non-Western music cultures, including Indian music and Iranian music. The violin is sometimes informally called a fiddle, particularly in Irish traditional music and bluegrass, but this nickname is also used regardless of the type of music played on it.
 
 ###### Topic similiarity
-Most similiar to topic 19:  
-0.017*"book" + 0.011*"church" + 0.009*"titl" + 0.009*"name" + 0.009*"from" + 0.008*"publish" + 0.008*"first" + 0.008*"god" + 0.007*"cite" + 0.006*"year"
+Most similiar to topic 17:  
+0.014*"com" + 0.013*"titl" + 0.011*"album" + 0.011*"cite" + 0.010*"music" + 0.010*"record" + 0.009*"web" + 0.009*"name" + 0.009*"date" + 0.008*"first"
 
-with 35.710325504071261% confidence.
+with 52.053422831164042%  confidence.
 
 
 
