@@ -9,33 +9,12 @@ Through this process, I have written some other codes, such as comparing two mat
 
 ## Implementation Details
 
-1. xml1.py -> Convert xml.bz2 file(wiki) to text file, and extract all text bodies. The first 10,000 texts are selected and saved(extracted_texts.txt).
-2. prune.py -> Remove common and unique words, and non-english syllybus  
-            -> Creates and saves the dictionary(the_dictionary.dict).  
-            -> Creates sparce vectors representing the token frequency in each text  (text_vectors.txt)
-5. lda.py -> Performes the Latend Dirichlet Analysis
-
-#### Move to Miscs:
-
-3. convert_for_lda.py -> represents tokens in the necessary format  
-4. quick_sort -> align ID(most right collum) in increasing order  
-5. furthur convert_for_lda.py -> represents tokens in the necessary format  
-6. lda.py -> does the lda
-
-#####Sparce vectors:
-3. sparce_vectors.py
-
-#####Matrix format: 
-3. matrix_convert.py
-4. matrix_compare.py
-
-
-
-#### Make a bz2 file with only text bodies:
-
-3. make_xml.py -> make xml file with text bodies
-4. compress.py -> compresses the file
-
+1. Convert xml.bz2 file(wiki) to text file, and extract all text bodies. The first 10,000 texts are selected and saved(extracted_texts.txt). (See `xml1.py`)
+2. Remove common and unique words, and non-english syllybus. (See `prune.py`)
+3. Create and saves the dictionary(the_dictionary.dict). (See `prune.py`)
+4. Create sparse vectors representing the token frequency in each text (text_vectors.txt). (See `prune.py`)
+5. Train the Latend Dirichlet Analysis model. (See `lda.py`)
+6. Predict topic distribution given a text.
 
 ## Results
 
@@ -88,9 +67,16 @@ With percentage: 80.456719995350756%
 
 
 ## Miscellaneous
-1. [Understanding the basics of Git and GitHub](http://stackoverflow.com/questions/11816424/understanding-the-basics-of-git-and-github)
-2. [Resolving a merge conflict using the command line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
-3. [Git documentation](https://git-scm.com/documentation)
++ `convert_for_lda.py`: represents tokens in the necessary format  
++ `quick_sort.py`: align ID(most right collum) in increasing order  
++ `furthur convert_for_lda.py`: represents tokens in the necessary format
++ `sparce_vectors.py`: sparse vector representation
++ `matrix_convert.py, matrix_compare.py`: matrix representation
++ `make_xml.py`: make xml file with text bodies
++ `compress.py`: compresses the file
++ [Understanding the basics of Git and GitHub](http://stackoverflow.com/questions/11816424/understanding-the-basics-of-git-and-github)
++ [Resolving a merge conflict using the command line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
++ [Git documentation](https://git-scm.com/documentation)
 4. [Markdown basics for README.md](https://guides.github.com/features/mastering-markdown/)
 
 
