@@ -72,7 +72,7 @@ Topic 20: 0.106*"align" + 0.071*"right" + 0.046*"style" + 0.032*"text" + 0.024*"
 Most similiar to topic 4:  
 0.014*"state" + 0.010*"titl" + 0.010*"cite" + 0.008*"unit" + 0.008*"parti" + 0.008*"name" + 0.008*"nation" + 0.007*"date" + 0.007*"govern" + 0.007*"publish"
 
-With 47.625570439519227  confidence.
+With 47.625570439519227%  confidence.
 
 
 
