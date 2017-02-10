@@ -84,7 +84,7 @@ alfonso may refer to alfonso of leon 866 910 surnamed the great afonso of portug
 Most similiar to:
 Topic 7:  0.014*"name" + 0.010*"are" + 0.010*"titl" + 0.010*"cite" + 0.010*"island" + 0.009*"from" + 0.008*"year" + 0.008*"journal" + 0.008*"by" + 0.006*"river" 
 
-With percentage: 80.456719995350756
+With percentage: 80.456719995350756%
 
 
 ## Miscellaneous
