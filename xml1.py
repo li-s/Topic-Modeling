@@ -15,6 +15,7 @@ from time import time
 def myfunc(length, file):
 	i = 0
 	res = []
+	seperation = 0
 	for event, elem in etree.iterparse(bz2.BZ2File(file), events=('end',)):
 	
 		try:
@@ -23,9 +24,14 @@ def myfunc(length, file):
 					elem.tag == '{http://www.mediawiki.org/xml/export-0.10/}text' and \
 					len(elem.text) > 200:
 					
-					i += 1
-					res.append(elem.text)
-					res.append('abcdefghijklmnopqrstuvwxyzzz')
+					if seperation < 300:
+						seperation += 1
+					
+					else:
+						i += 1
+						res.append(elem.text)
+						res.append('abcdefghijklmnopqrstuvwxyzzz')
+						seperation = 0
 					
 			else:
 				return(res)
