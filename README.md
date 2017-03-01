@@ -7,6 +7,21 @@ In this repository, I chose to utilise Latent Dirichlet Allocation(LDA) for topi
 
 Through this process, I have written some other codes, such as comparing two matrixes using cosine similarity, or making and then compressing a xml file.
 
+## Getting started
+
+#### Prerequisites
++ [Python3](https://www.python.org/download/releases/3.0/)
++ [Gensim](https://radimrehurek.com/gensim/)
++ [Natual language toolkit (NLTK)](http://www.nltk.org/)
++ [PyEnchant](http://pythonhosted.org/pyenchant/tutorial.html)
++ [cElementTree](http://effbot.org/zone/celementtree.htm#downloads)
+
+#### Usage
+1. Run `python3 xml1.py`, to extract xml file from bz2, and then extract every 300 text longer than 200 words.
+2. Run `python3 prune`, to prune texts, and create a dictionary.
+3. Run `python3 lda.py`, to perform Latent Dirichlet Analysis(LDA).
+4. Run `python3 document_selector.py` to prepare self selected text for LDA. Text must be named `short_texts.txt` in seperate folder `data`.
+5. Run `python3 lda_comparison.py` to compare the percentage of each topic in selected text from step 4 against the top 20 topics generated in step 3.
 
 ## Implementation Details
 
@@ -70,8 +85,7 @@ Most similiar to topic 17:
 with 52.053422831164042%  confidence.
 
 
-
-## Miscellaneous
+## API reference
 + `convert_for_lda.py`: represents tokens in the necessary format  
 + `quick_sort.py`: align ID(most right collum) in increasing order  
 + `furthur convert_for_lda.py`: represents tokens in the necessary format
@@ -79,9 +93,10 @@ with 52.053422831164042%  confidence.
 + `matrix_convert.py, matrix_compare.py`: matrix representation
 + `make_xml.py`: make xml file with text bodies
 + `compress.py`: compresses the file
+
+
+## Miscellaneous
 + [Understanding the basics of Git and GitHub](http://stackoverflow.com/questions/11816424/understanding-the-basics-of-git-and-github)
 + [Resolving a merge conflict using the command line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 + [Git documentation](https://git-scm.com/documentation)
-4. [Markdown basics for README.md](https://guides.github.com/features/mastering-markdown/)
-
-
++ [Markdown basics for README.md](https://guides.github.com/features/mastering-markdown/)
