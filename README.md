@@ -1,9 +1,10 @@
 # Topic Modeling by Latent Dirichlet Allocation
 
+# Introduction
 
 Topic modeling views documents as a collection of various topics. It is not only used for exploring hidden semantic structures in new textual data, but for also complementing supervised machine learning in constructing and checking the accuracy of existing classification models.
 
-In this repository, I chose to utilise Latent Dirichlet Allocation(LDA) for topic modeling. I trained LDA on a subset of the English wikipedia corpus, and found the top 20 topics of the texts found below. Furthurmore, I used the trained LDA to predict topic distributions on several seletected texts within the corpus(short_texts.txt), of which the result can be found below.
+In this repository, I chose to utilise Latent Dirichlet Allocation(LDA) for topic modeling. I trained LDA on a subset of the English wikipedia corpus, and found the top 20 topics of the texts found below. Furthurmore, I used the trained LDA to predict topic distributions on several seletected texts within the corpus(short_texts.txt), of which the result can be found below. The main programs can be found in folder `main`.
 
 Through this process, I have written some other codes, such as comparing two matrixes using cosine similarity, or making and then compressing a xml file.
 
