@@ -17,25 +17,25 @@ def myfunc(length, file):
 	res = []
 	seperation = 0
 	for event, elem in etree.iterparse(bz2.BZ2File(file), events=('end',)):
-	
+
 		try:
 			if i < length:
 				if event == 'end' and \
 					elem.tag == '{http://www.mediawiki.org/xml/export-0.10/}text' and \
 					len(elem.text) > 200:
-					
+
 					if seperation < 300:
 						seperation += 1
-					
+
 					else:
 						i += 1
 						res.append(elem.text)
 						res.append('abcdefghijklmnopqrstuvwxyzzz')
 						seperation = 0
-					
+
 			else:
 				return(res)
-				
+
 		except:
 			pass
 		elem.clear()
@@ -43,10 +43,10 @@ def myfunc(length, file):
 if __name__ == '__main__':
 	a = "/home/li/Downloads/enwiki-latest-pages-articles.xml.bz2"
 	b = int(input('Enter number of texts: '))
-	
+
 	start1 = time()
 
-	with open('./data/extracted_texts.txt', 'w') as fout:
+	with open('../data/extracted_texts.txt', 'w') as fout:
 		pprint(myfunc(b, a), stream  = fout)
-		
+
 	print('My function timing: {}'.format(time() - start1))
